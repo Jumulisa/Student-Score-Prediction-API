@@ -1,10 +1,13 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
+import os
+
+# Get the absolute path to the model
+model_path = os.path.join(os.path.dirname(__file__), "models", "best_model.pkl")
 
 # Load the saved model
-# model = joblib.load("best_model.pkl")
-model = joblib.load("C:/Users/Jolie/FastAPI/notebooks/best_model.pkl")
+model = joblib.load(model_path)
 
 # Initialize FastAPI app
 app = FastAPI()
