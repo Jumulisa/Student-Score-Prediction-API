@@ -1,0 +1,5 @@
+# Ignore the virtual environment folder
+venv/
+
+# Ignore the model file
+models/best_model.pkl
