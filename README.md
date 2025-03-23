@@ -35,7 +35,7 @@ Enable CORS to allow Flutter to access the API.
 
 # Run the API locally with:
 uvicorn main:app --reload
-Tested the API usinghttps://student-score-prediction-api.onrender.com/docs#/.
+Tested the API using https://student-score-prediction-api.onrender.com/docs#/default/predict%20predict%20post.
 
 3. Deploy the API to Render
 Steps to Follow:
