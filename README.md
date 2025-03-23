@@ -9,6 +9,7 @@
 This guide walks you through the entire process of building a Student Score Predictor, from training a Machine Learning model to running a Flutter app.
 
 1. Train the Machine Learning Model
+   
 I used Linear Regression to predict student scores based on study hours and past scores.
 
 Steps to Follow:
@@ -25,6 +26,7 @@ Evaluate the model using Mean Squared Error (MSE).
 Save the trained model as a .pkl file using joblib.
 
 2. Build the FastAPI Backend
+   
 FastAPI will be used to serve predictions.
 
 Steps to Follow:
@@ -45,6 +47,7 @@ uvicorn main:app --reload
 Tested the API using https://student-score-prediction-api.onrender.com/docs#/default/predict%20predict%20post.
 
 3. Deploy the API to Render
+   
 Steps to Follow:
 Created a requirements.txt file with all dependencies.
 
@@ -57,6 +60,7 @@ uvicorn main:app --host 0.0.0.0 --port 10000
 Get the public API URL for use in Flutter.
 
 4. Build the Flutter App
+   
 Steps to Follow:
 # Create a Flutter Project:
 flutter create student_score_predictor
@@ -64,6 +68,7 @@ cd student_score_predictor
 
 # Install HTTP Package for API Requests:
 flutter pub add http
+
 Update pubspec.yaml to include http.
 
 Create a UI with Input Fields for study_hours and past_scores.
@@ -75,12 +80,18 @@ flutter run
 
 # Troubleshooting Commands (if needed):
 flutter clean
+
 flutter pub get
+
 flutter run
 
 # Conclusion
  Trained a Machine Learning model
+ 
  Built a FastAPI backend
+ 
  Deployed API on Render
+ 
  Built a Flutter app and connected to the API
+ 
  Runned the Flutter app successfully
